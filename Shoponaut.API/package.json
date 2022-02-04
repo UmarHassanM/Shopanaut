@@ -1,0 +1,42 @@
+{
+  "name": "ShoponautAPI",
+  "version": "1.0.0",
+  "description": "Catalog Search Backend",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.{js,json}\"",
+    "lint": "eslint src/**",
+    "start": "nodemon src/app.js",
+    "start:development": "cross-env NODE_ENV=development nodemon src/server.js",
+    "start:production": "cross-env NODE_ENV=production nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achints29/catalogsearch.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Atlas",
+    "Search",
+    "Catalog",
+    "Product"
+  ],
+  "author": "Achint Shrivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achints29/catalogsearch/issues"
+  },
+  "homepage": "https://github.com/achints29/catalogsearch#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "nodemon": "^2.0.15",
+    "prettier": "2.5.1"
+  }
+}
